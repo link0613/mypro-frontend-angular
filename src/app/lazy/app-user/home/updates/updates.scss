@@ -1,0 +1,43 @@
+@import '../../../../styles/custom/variables';
+
+.updates {
+  padding: 32px 8px 32px 18px;
+  font-size: 0.889rem;
+
+  @media (min-width: 700px) {
+    padding: 50px 3%;
+    font-size: 1rem;
+  }
+  @media (min-width: $point) {
+    font-size: 1.111rem;
+  }
+  @media (min-width: $point-lg) {
+    padding: 80px 71px;
+  }
+
+  li {
+    position: relative;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+
+    &:not(:last-of-type) {
+      margin-bottom: 19px;
+
+      @media (min-width: 700px) {
+        margin-bottom: 25px;
+      }
+      @media (min-width: $point-lg) {
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .updates-icon {
+    color: $brand-secondary;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
